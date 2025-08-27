@@ -1,5 +1,4 @@
-# pacientes_api
-
+# Esse é meu primeiro projeto. Foi feito com auxílio de ChatGPT, apenas para fins de estudo, sem qualquer valia para avaliações
 # API de Pacientes 🏥
 
 Projeto simples de **CRUD com FastAPI + SQLite** para gerenciamento de pacientes.
@@ -28,14 +27,27 @@ app/
    cd pacientes_api
 
 2. Crie um ambiente virtual e instale as dependências
+```
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
 pip install -r requirements.txt
+```
 
-3. Execute o Servidor
+4. Execute o Servidor
 uvicorn app.main:app --reload
 
-4. Acesse a documentação
+5. Acesse a documentação
 http://127.0.0.1:8000/docs
 
+📌 Endpoints
+
+POST /pacientes/ → cria paciente
+
+GET /pacientes/ → lista todos
+
+GET /pacientes/{id} → busca por ID
+
+PUT /pacientes/{id} → atualiza paciente
+
+DELETE /pacientes/{id} → remove paciente
